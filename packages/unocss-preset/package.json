@@ -1,0 +1,47 @@
+{
+    "name": "@shweui/unocss-preset",
+    "type": "module",
+    "version": "0.0.1",
+    "description": "Opinionated Shwe UI preset for UnoCSS.",
+    "author": "Aungpwint <https://github.com/aungpwint>",
+    "license": "MIT",
+    "homepage": "https://github.com/aungpwint/shweui/blob/main/packages/unocss-preset/README.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aungpwint/shweui.git",
+        "directory": "packages/unocss-preset"
+    },
+    "bugs": {
+        "url": "https://github.com/aungpwint/shweui/issues"
+    },
+    "keywords": [
+        "shweui",
+        "@shweui/unocss-preset",
+        "unocss preset"
+    ],
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "tsup --watch",
+        "build": "tsup"
+    },
+    "dependencies": {
+        "unocss": "catalog:",
+        "@unocss/preset-mini": "catalog:",
+        "magic-color": "catalog:"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
