@@ -8,4 +8,4 @@ pnpm i @shweui
 
 ## 🏛️ License
 
-[MIT](./LICENSE) License © 2023 [aungpwint](https://github.com/aungpwint)
+[MIT](./LICENSE) License © 2022 [aungpwint](https://github.com/aungpwint)
