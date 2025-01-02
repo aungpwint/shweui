@@ -1,0 +1,13 @@
+.el-popup-parent--hidden {
+    width: 100% !important;
+}
+
+.el-drawer__header {
+    margin-bottom: 10px !important;
+    color: var(--el-text-color-primary) !important;
+}
+
+.el-dropdown-menu__item:not(.is-disabled).is-active {
+    background-color: var(--el-dropdown-menuItem-hover-fill);
+    color: var(--el-dropdown-menuItem-hover-color);
+}
