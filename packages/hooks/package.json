@@ -1,0 +1,45 @@
+{
+    "name": "@shweui/hooks",
+    "type": "module",
+    "version": "0.0.1",
+    "description": "Shwe UI hooks library",
+    "author": "Aung Pwint <https://github.com/aungpwint>",
+    "license": "MIT",
+    "homepage": "https://github.com/aungpwint/shweui/blob/main/packages/hooks/README.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aungpwint/shweui.git",
+        "directory": "packages/hooks"
+    },
+    "bugs": {
+        "url": "https://github.com/aungpwint/shweui/issues"
+    },
+    "keywords": [
+        "shweui",
+        "hooks",
+        "@shweui/hooks"
+    ],
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch"
+    },
+    "peerDependencies": {
+        "vue": "^3.4.29"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
