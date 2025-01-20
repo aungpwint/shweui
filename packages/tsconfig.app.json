@@ -1,0 +1,53 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.dom.json",
+    "include": [
+        "types/env.d.ts",
+        "src/**/*",
+        "src/**/*.vue",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.d.ts",
+        "types/**/*.d.ts",
+        "packages/**/*.d.ts",
+    ],
+    "exclude": ["node_modules", "dist"],
+    "compilerOptions": {
+        "target": "esnext", // Use the latest ECMAScript features
+        "module": "esnext", // Use ES modules
+        "moduleResolution": "node", // Resolve modules using Node's algorithm
+        "strict": true, // Enable all strict type-checking options
+        "jsx": "preserve", // Preserve JSX for Vue files
+        "jsxFactory": "h",
+        "jsxFragmentFactory": "Fragment",
+        "esModuleInterop": true, // Enable compatibility with CommonJS modules
+        "skipLibCheck": true, // Skip type checking of declaration files
+        "forceConsistentCasingInFileNames": true, // Enforce consistent casing in file names
+        "useDefineForClassFields": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "jsxImportSource": "vue",
+        "lib": ["esnext", "dom"],
+        "allowJs": true,
+        "allowImportingTsExtensions": true,
+        "allowSyntheticDefaultImports": true,
+        "strictFunctionTypes": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "verbatimModuleSyntax": true,
+        "composite": true,
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "types": [
+            "@intlify/unplugin-vue-i18n/types",
+            "vite/client",
+            "element-plus/global",
+            "@types/qrcode",
+            "vite-plugin-svg-icons/client"
+        ]
+    }
+}
