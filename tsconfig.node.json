@@ -7,6 +7,9 @@
         "nightwatch.conf.*",
         "playwright.config.*",
         "vite.config.ts",
+        "electron.vite.config.*",
+        "electron/**/*.d.ts",
+        "electron/main/*.d.ts"
     ],
     "compilerOptions": {
         "composite": true,
@@ -15,6 +18,6 @@
 
         "module": "ESNext",
         "moduleResolution": "Bundler",
-        "types": ["node"]
+        "types": ["node", "electron-vite/node"]
     }
 }

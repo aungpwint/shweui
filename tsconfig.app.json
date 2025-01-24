@@ -9,6 +9,9 @@
         "src/**/*.d.ts",
         "types/**/*.d.ts",
         "packages/**/*.d.ts",
+        "electron/electron-env.d",
+        "electron/main/**/*.d.ts",
+        "electron/preload/**/*.d.ts"
     ],
     "exclude": ["node_modules", "dist"],
     "compilerOptions": {
