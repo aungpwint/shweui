@@ -1,0 +1,45 @@
+{
+    "name": "@shweui/color",
+    "type": "module",
+    "version": "0.0.1",
+    "description": "Shwe UI color library",
+    "author": "Aung Pwint <https://github.com/aungpwint>",
+    "license": "MIT",
+    "homepage": "https://github.com/aungpwint/shweui/blob/main/packages/color/README.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aungpwint/shweui.git",
+        "directory": "packages/color"
+    },
+    "bugs": {
+        "url": "https://github.com/aungpwint/shweui/issues"
+    },
+    "keywords": [
+        "shweui",
+        "color",
+        "@shweui/color"
+    ],
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch"
+    },
+    "peerDependencies": {
+        "vue": "^3.4.29"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
