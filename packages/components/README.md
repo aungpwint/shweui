@@ -1,9 +1,9 @@
-# ✨ Shwe UI Hooks
+# ✨ Shwe UI Components
 
-# @shweui/hooks
+# @shweui/components
 
 ## Usage
 
 ```bash
-pnpm i @shweui/hooks
+pnpm i @shweui/components
 ```
